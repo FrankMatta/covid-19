@@ -19,8 +19,8 @@ img {
 }
 
 p {
-    color: $gray-color;
-    line-height: 2.5;
+  color: $gray-color;
+  line-height: 2.5;
 }
 
 body {
@@ -166,50 +166,50 @@ header {
 
 // Section 1
 #whats-covid {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 3rem;
-    position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3rem;
+  position: relative;
 
-    & .illustration {
-       & img {
-           width: 840px;
-       }
+  & .illustration {
+    & img {
+      width: 840px;
+    }
+  }
+
+  & .content {
+    margin-left: 2rem;
+    & p {
+      width: 70%;
     }
 
-    & .content {
-        margin-left: 2rem;
-        & p {
-            width: 70%;
-        }
+    & a {
+      display: inline-block;
+      width: 170px;
+      margin-top: 0.7rem;
+      text-align: center;
+      background: $primary-light-color;
+      color: $primary-color;
+      padding: 1rem 2rem;
+      font-weight: 800;
+      border-radius: 30px;
+    }
+  }
 
-        & a {
-            display: inline-block;
-            width: 170px;
-            margin-top: 0.7rem;
-            text-align: center;
-            background: $primary-light-color;
-            color: $primary-color;
-            padding: 1rem 2rem;
-            font-weight: 800;
-            border-radius: 30px;
-        }
-    }
-   
-    & #firstVirus {
-      position: absolute;
-      width: 140px;
-      right: 0;
-      bottom: 100px;
-    }
+  & #firstVirus {
+    position: absolute;
+    width: 140px;
+    right: 0;
+    bottom: 100px;
+  }
 
-    & #secondVirus {
-      width: 100px;
-      position: absolute;
-      bottom: 0;
-      right: 100px;
-    }
+  & #secondVirus {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+  }
 }
 
 // Contagion
@@ -236,7 +236,7 @@ header {
       border-bottom: 6px solid transparent;
 
       & h2 {
-        font-size: 2rem;;
+        font-size: 2rem;
       }
 
       & img {
@@ -244,7 +244,7 @@ header {
       }
 
       &:nth-child(1)::before {
-        content: '';
+        content: "";
         background: url("../images/section2-virus.png") no-repeat;
         position: absolute;
         width: 254px;
@@ -289,7 +289,6 @@ header {
     bottom: 200px;
     width: 150px;
   }
-
 }
 
 #prevention {
@@ -302,7 +301,6 @@ header {
   justify-content: center;
 
   & .steps {
-
     & .step {
       display: flex;
       align-items: center;
@@ -329,7 +327,7 @@ header {
       }
     }
 
-    & .step:first-child { 
+    & .step:first-child {
       margin-top: 3rem;
     }
 
@@ -339,7 +337,6 @@ header {
   }
 
   & .viruses img:nth-child(1) {
-   
     width: 130px;
     position: absolute;
     top: 22%;
@@ -362,44 +359,66 @@ header {
 }
 
 #contact {
-  text-align: center;
+  margin-top: 4rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 
-  & form {
-    display: flex;
-    justify-content: space-between;
-    background: $light-color;
-    box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
-    border-radius: 57px;
-    padding: 0.5rem 1rem;
-    margin-top: 2rem;
-
-    & input {
-      border: none;
-      width: 50%;
-      padding: 1rem;
-
-      &:focus {
-        outline: none;
-      }
-    }
-
-    & button[type="submit"] {
-      color: $light-color;
-      background: $primary-color;
-      border: none;
-      width: 150px;
-      padding: 1rem 2rem;
+  & .container {
+    text-align: center;
+    & form {
+      display: flex;
+      justify-content: space-between;
+      background: $light-color;
+      box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
       border-radius: 57px;
-      cursor: pointer;
-      border: 2px solid transparent;
-      transition: all 0.3s;
+      padding: 0.5rem 1rem;
+      margin-top: 2rem;
 
+      & input {
+        border: none;
+        width: 50%;
+        padding: 1rem;
 
-      &:hover {
-        background: $light-color;
-        color: $primary-color;
-        border: 2px solid $primary-color;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      & button[type="submit"] {
+        color: $light-color;
+        background: $primary-color;
+        border: none;
+        width: 150px;
+        padding: 1rem 2rem;
+        border-radius: 57px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.3s;
+
+        &:hover {
+          background: $light-color;
+          color: $primary-color;
+          border: 2px solid $primary-color;
+        }
       }
     }
+  }
+
+  & .viruses img:nth-child(1) {
+    position: absolute;
+    width: 150px;
+    right: 10%;
+    bottom: 50%;
+  }
+  & .viruses img:nth-child(2) {
+    position: absolute;
+    width: 200px;
+    right: 0;
+    bottom: 10%;
+    
   }
 }
