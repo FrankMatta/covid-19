@@ -1,0 +1,291 @@
+.sub-title {
+  color: #FB4C47;
+  font-size: 2rem; }
+
+.title {
+  color: #035755;
+  font-size: 3rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+p {
+  color: #4B4F51;
+  line-height: 2.5; }
+
+body {
+  background: #fff;
+  font-family: "Red hat display", sans-serif;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.container {
+  max-width: 1280px; }
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  position: relative; }
+  header #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 2rem;
+    position: sticky;
+    z-index: 2; }
+    header #navbar .logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      color: #035755;
+      font-weight: 800;
+      width: 170px;
+      cursor: pointer; }
+      header #navbar .logo span img {
+        width: 63px;
+        height: 63px; }
+    header #navbar nav ul {
+      display: flex;
+      align-items: center; }
+      header #navbar nav ul li {
+        margin-left: 2.5rem;
+        position: relative; }
+        header #navbar nav ul li a {
+          color: #035755;
+          transition: all 0.3s; }
+          header #navbar nav ul li a:hover {
+            color: #FF383D; }
+        header #navbar nav ul li:last-child a {
+          border: 2px solid #FB4C47;
+          padding: 0.8rem 2.1rem;
+          border-radius: 30px;
+          color: #FF383D;
+          font-weight: 800; }
+          header #navbar nav ul li:last-child a:hover {
+            color: #fff;
+            background-color: #FF383D;
+            transition: all 0.3s; }
+      header #navbar nav ul li:not(:last-child) .current {
+        color: #FB4C47; }
+        header #navbar nav ul li:not(:last-child) .current::before {
+          content: "";
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: #FB4C47;
+          position: absolute;
+          bottom: -15px;
+          left: 50%;
+          transform: translateY(-50%); }
+  header #overview {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 6rem; }
+    header #overview #main-content {
+      width: 50%; }
+      header #overview #main-content p {
+        margin-top: 2rem; }
+      header #overview #main-content a {
+        display: inline-block;
+        padding: 1rem 2.3rem;
+        width: 170px;
+        border-radius: 30px;
+        background: #FB4C47;
+        color: #fff;
+        font-weight: 800;
+        margin-top: 2rem;
+        transition: all 0.3s; }
+      header #overview #main-content a:hover {
+        border: 2px solid #FB4C47;
+        color: #FB4C47;
+        background-color: #fff; }
+    header #overview .illustration {
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 7rem; }
+
+#whats-covid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3rem;
+  position: relative; }
+  #whats-covid .illustration img {
+    width: 840px; }
+  #whats-covid .content {
+    margin-left: 2rem; }
+    #whats-covid .content p {
+      width: 70%; }
+    #whats-covid .content a {
+      display: inline-block;
+      width: 170px;
+      margin-top: 0.7rem;
+      text-align: center;
+      background: rgba(250, 86, 82, 0.15);
+      color: #FB4C47;
+      padding: 1rem 2rem;
+      font-weight: 800;
+      border-radius: 30px; }
+  #whats-covid #firstVirus {
+    position: absolute;
+    width: 140px;
+    right: 0;
+    bottom: 100px; }
+  #whats-covid #secondVirus {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 100px; }
+
+#contagion {
+  height: 100vh; }
+  #contagion > div {
+    text-align: center; }
+  #contagion .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem; }
+    #contagion .cards .card {
+      box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+      border-radius: 10px;
+      margin: 0 1rem;
+      padding: 3rem 1rem;
+      transition: all 0.3s;
+      position: relative;
+      border-bottom: 6px solid transparent; }
+      #contagion .cards .card h2 {
+        font-size: 2rem; }
+      #contagion .cards .card img {
+        width: 260px; }
+      #contagion .cards .card:nth-child(1)::before {
+        content: '';
+        background: url("../images/section2-virus.png") no-repeat;
+        position: absolute;
+        width: 254px;
+        height: 300px;
+        left: 0;
+        bottom: 0;
+        transform: translateX(-150px) translateY(10px); }
+      #contagion .cards .card:hover {
+        border-bottom: 6px solid #FB4C47;
+        cursor: pointer; }
+
+#symptoms {
+  width: 100%;
+  position: relative; }
+  #symptoms div {
+    text-align: center; }
+  #symptoms .illustration img {
+    width: 900px; }
+  #symptoms #shape-right {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    width: 150px; }
+  #symptoms #shape-left {
+    position: absolute;
+    left: 100px;
+    bottom: 200px;
+    width: 150px; }
+
+#prevention {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #prevention .steps .step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #prevention .steps .step .prevention-text {
+      display: flex;
+      text-align: left;
+      width: 50%; }
+      #prevention .steps .step .prevention-text .step-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.8rem 1rem 0 0;
+        font-size: 2rem;
+        color: #FB4C47;
+        background-color: rgba(250, 86, 82, 0.15);
+        padding: 1rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; }
+  #prevention .steps .step:first-child {
+    margin-top: 3rem; }
+  #prevention .steps .step:nth-child(even) {
+    flex-direction: row-reverse; }
+  #prevention .viruses img:nth-child(1) {
+    width: 130px;
+    position: absolute;
+    top: 22%;
+    left: 0; }
+  #prevention .viruses img:nth-child(2) {
+    width: 90px;
+    position: absolute;
+    bottom: 22%;
+    right: 3%; }
+  #prevention .viruses img:nth-child(3) {
+    width: 130px;
+    position: absolute;
+    bottom: 12%;
+    right: 0; }
+
+#contact {
+  text-align: center; }
+  #contact form {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
+    border-radius: 57px;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem; }
+    #contact form input {
+      border: none;
+      width: 50%;
+      padding: 1rem; }
+      #contact form input:focus {
+        outline: none; }
+    #contact form button[type="submit"] {
+      color: #fff;
+      background: #FB4C47;
+      border: none;
+      width: 150px;
+      padding: 1rem 2rem;
+      border-radius: 57px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.3s; }
+      #contact form button[type="submit"]:hover {
+        background: #fff;
+        color: #FB4C47;
+        border: 2px solid #FB4C47; }
