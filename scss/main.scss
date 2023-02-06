@@ -38,7 +38,7 @@ body {
 }
 
 // Header
-header {
+header, footer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -46,13 +46,12 @@ header {
   padding: 1rem 0;
   position: relative;
 
-  #navbar {
+  & .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     margin: 0 2rem;
-    position: sticky;
     z-index: 2;
 
     & .logo {
@@ -88,7 +87,7 @@ header {
           }
         }
 
-        &:last-child a {
+        & a.highlight {
           border: 2px solid $primary-color;
           padding: 0.8rem 2.1rem;
           border-radius: 30px;
@@ -120,6 +119,10 @@ header {
         }
       }
     }
+  }
+
+  & .main-navbar {
+    position: fixed;
   }
 
   & #overview {
@@ -359,13 +362,12 @@ header {
 }
 
 #contact {
-  margin-top: 4rem;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   width: 100%;
+  height: 50vh;
 
   & .container {
     text-align: center;
@@ -412,7 +414,7 @@ header {
     position: absolute;
     width: 150px;
     right: 10%;
-    bottom: 50%;
+    bottom: 80%;
   }
   & .viruses img:nth-child(2) {
     position: absolute;
@@ -420,5 +422,22 @@ header {
     right: 0;
     bottom: 10%;
     
+  }
+}
+
+footer {
+  & .social-icons {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & span {
+      margin: 0 1rem;
+      cursor: pointer;
+    }
+  }
+
+  & .copyright {
+    color: $faded-gray-color
   }
 }

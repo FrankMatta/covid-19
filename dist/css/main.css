@@ -36,22 +36,21 @@ body {
 .container {
   max-width: 1280px; }
 
-header {
+header, footer {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
   position: relative; }
-  header #navbar {
+  header .navbar, footer .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     margin: 0 2rem;
-    position: sticky;
     z-index: 2; }
-    header #navbar .logo {
+    header .navbar .logo, footer .navbar .logo {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -60,33 +59,33 @@ header {
       font-weight: 800;
       width: 170px;
       cursor: pointer; }
-      header #navbar .logo span img {
+      header .navbar .logo span img, footer .navbar .logo span img {
         width: 63px;
         height: 63px; }
-    header #navbar nav ul {
+    header .navbar nav ul, footer .navbar nav ul {
       display: flex;
       align-items: center; }
-      header #navbar nav ul li {
+      header .navbar nav ul li, footer .navbar nav ul li {
         margin-left: 2.5rem;
         position: relative; }
-        header #navbar nav ul li a {
+        header .navbar nav ul li a, footer .navbar nav ul li a {
           color: #035755;
           transition: all 0.3s; }
-          header #navbar nav ul li a:hover {
+          header .navbar nav ul li a:hover, footer .navbar nav ul li a:hover {
             color: #FF383D; }
-        header #navbar nav ul li:last-child a {
+        header .navbar nav ul li a.highlight, footer .navbar nav ul li a.highlight {
           border: 2px solid #FB4C47;
           padding: 0.8rem 2.1rem;
           border-radius: 30px;
           color: #FF383D;
           font-weight: 800; }
-          header #navbar nav ul li:last-child a:hover {
+          header .navbar nav ul li a.highlight:hover, footer .navbar nav ul li a.highlight:hover {
             color: #fff;
             background-color: #FF383D;
             transition: all 0.3s; }
-      header #navbar nav ul li:not(:last-child) .current {
+      header .navbar nav ul li:not(:last-child) .current, footer .navbar nav ul li:not(:last-child) .current {
         color: #FB4C47; }
-        header #navbar nav ul li:not(:last-child) .current::before {
+        header .navbar nav ul li:not(:last-child) .current::before, footer .navbar nav ul li:not(:last-child) .current::before {
           content: "";
           width: 7px;
           height: 7px;
@@ -96,17 +95,19 @@ header {
           bottom: -15px;
           left: 50%;
           transform: translateY(-50%); }
-  header #overview {
+  header .main-navbar, footer .main-navbar {
+    position: fixed; }
+  header #overview, footer #overview {
     display: flex;
     align-items: center;
     width: 100%;
     height: 500px;
     margin-top: 6rem; }
-    header #overview #main-content {
+    header #overview #main-content, footer #overview #main-content {
       width: 50%; }
-      header #overview #main-content p {
+      header #overview #main-content p, footer #overview #main-content p {
         margin-top: 2rem; }
-      header #overview #main-content a {
+      header #overview #main-content a, footer #overview #main-content a {
         display: inline-block;
         padding: 1rem 2.3rem;
         width: 170px;
@@ -116,11 +117,11 @@ header {
         font-weight: 800;
         margin-top: 2rem;
         transition: all 0.3s; }
-      header #overview #main-content a:hover {
+      header #overview #main-content a:hover, footer #overview #main-content a:hover {
         border: 2px solid #FB4C47;
         color: #FB4C47;
         background-color: #fff; }
-    header #overview .illustration {
+    header #overview .illustration, footer #overview .illustration {
       width: 50%;
       position: absolute;
       right: 0;
@@ -260,13 +261,12 @@ header {
     right: 0; }
 
 #contact {
-  margin-top: 4rem;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  width: 100%; }
+  width: 100%;
+  height: 50vh; }
   #contact .container {
     text-align: center; }
     #contact .container form {
@@ -301,9 +301,21 @@ header {
     position: absolute;
     width: 150px;
     right: 10%;
-    bottom: 50%; }
+    bottom: 80%; }
   #contact .viruses img:nth-child(2) {
     position: absolute;
     width: 200px;
     right: 0;
     bottom: 10%; }
+
+footer .social-icons {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  footer .social-icons span {
+    margin: 0 1rem;
+    cursor: pointer; }
+
+footer .copyright {
+  color: #415E56; }
