@@ -1,5 +1,4 @@
 const navItems = document.querySelectorAll("header nav ul li a");
-console.log(navItems)
 
 navItems.forEach(a => {
     a.addEventListener('click', (e) => {
