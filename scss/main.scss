@@ -390,7 +390,7 @@ header, footer {
         }
       }
 
-      & button[type="submit"] {
+      & input[type="submit"] {
         color: $light-color;
         background: $primary-color;
         border: none;

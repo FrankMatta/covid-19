@@ -283,7 +283,7 @@ header, footer {
         padding: 1rem; }
         #contact .container form input:focus {
           outline: none; }
-      #contact .container form button[type="submit"] {
+      #contact .container form input[type="submit"] {
         color: #fff;
         background: #FB4C47;
         border: none;
@@ -293,7 +293,7 @@ header, footer {
         cursor: pointer;
         border: 2px solid transparent;
         transition: all 0.3s; }
-        #contact .container form button[type="submit"]:hover {
+        #contact .container form input[type="submit"]:hover {
           background: #fff;
           color: #FB4C47;
           border: 2px solid #FB4C47; }
