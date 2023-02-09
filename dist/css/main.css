@@ -306,7 +306,7 @@ header {
           border: 2px solid #FB4C47; }
       #contact .container form .captcha {
         position: absolute;
-        bottom: -60px;
+        bottom: -100px;
         left: 50%;
         transform: translateX(-50%); }
   #contact .viruses img:nth-child(1) {
