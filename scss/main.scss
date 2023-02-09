@@ -167,6 +167,10 @@ header, footer {
   }
 }
 
+header {
+  min-height: 90vh;
+}
+
 // Section 1
 #whats-covid {
   display: flex;
@@ -302,6 +306,7 @@ header, footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 150px 0 100px;
 
   & .steps {
     & .step {
@@ -327,6 +332,10 @@ header, footer {
           height: 50px;
           border-radius: 50%;
         }
+      }
+
+      & .illustration {
+        width: 40%;
       }
     }
 
@@ -426,6 +435,10 @@ header, footer {
 }
 
 footer {
+  & nav {
+    margin-left: -100px;
+  }
+
   & .social-icons {
     width: 100px;
     display: flex;

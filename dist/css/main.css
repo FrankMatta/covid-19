@@ -127,6 +127,9 @@ header, footer {
       right: 0;
       top: 7rem; }
 
+header {
+  min-height: 90vh; }
+
 #whats-covid {
   display: flex;
   justify-content: space-around;
@@ -219,7 +222,8 @@ header, footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin: 150px 0 100px; }
   #prevention .steps .step {
     display: flex;
     align-items: center;
@@ -240,6 +244,8 @@ header, footer {
         width: 50px;
         height: 50px;
         border-radius: 50%; }
+    #prevention .steps .step .illustration {
+      width: 40%; }
   #prevention .steps .step:first-child {
     margin-top: 3rem; }
   #prevention .steps .step:nth-child(even) {
@@ -307,6 +313,9 @@ header, footer {
     width: 200px;
     right: 0;
     bottom: 10%; }
+
+footer nav {
+  margin-left: -100px; }
 
 footer .social-icons {
   width: 100px;
