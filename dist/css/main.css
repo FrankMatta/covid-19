@@ -289,7 +289,7 @@ header {
         padding: 1rem; }
         #contact .container form input:focus {
           outline: none; }
-      #contact .container form input[type="submit"] {
+      #contact .container form button[type="submit"], #contact .container form input[type="submit"] {
         color: #fff;
         background: #FB4C47;
         border: none;
@@ -299,10 +299,12 @@ header {
         cursor: pointer;
         border: 2px solid transparent;
         transition: all 0.3s; }
-        #contact .container form input[type="submit"]:hover {
+        #contact .container form button[type="submit"]:hover, #contact .container form input[type="submit"]:hover {
           background: #fff;
           color: #FB4C47;
           border: 2px solid #FB4C47; }
+  #contact div:last-child {
+    margin-top: 30px; }
   #contact .viruses img:nth-child(1) {
     position: absolute;
     width: 150px;

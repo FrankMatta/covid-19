@@ -399,7 +399,7 @@ header {
         }
       }
 
-      & input[type="submit"] {
+      & button[type="submit"], input[type="submit"] {
         color: $light-color;
         background: $primary-color;
         border: none;
@@ -417,6 +417,10 @@ header {
         }
       }
     }
+  }
+
+  & div:last-child {
+    margin-top: 30px;
   }
 
   & .viruses img:nth-child(1) {
