@@ -234,7 +234,7 @@
     </section>
 
     <!-- Section 5: Contact -->
-    <section id="contact">
+    <!-- <section id="contact">
       <div class="container">
         <h2 class="title">Have a Question in mind?</h2>
         <h2 class="title">Let us help You</h2>
@@ -245,6 +245,7 @@
           data-netlify-recaptcha="true"
         >
           <input name="email" type="email" placeholder="francois_matta@outlook.com" />
+          <div data-netlify-recaptcha="true" class="captcha"></div>
           <button type="submit">Send</button>
         </form>
       </div>
@@ -252,51 +253,22 @@
         <img src="./images/section5-virus1.png" alt="covid-19 virus" />
         <img src="./images/section5-virus2.png" alt="covid-19 virus" />
       </div>
-      <div data-netlify-recaptcha="true"></div>
-    </section>
+      
+    </section> -->
 
-    <section id="contact-a" class="text-center py-3">
+    <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="bottom-line"></div>
-        <p class="lead">Here is how you can reach me</p>
+        <h2 class="title">Have a Question in mind?</h2>
+        <h2 class="title">Let us help You</h2>
         <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
-          <div class="text-fields">
-            <input
-              type="text"
-              class="text-input name-input"
-              placeholder="Name"
-              name="name"
-            />
-            <input
-              type="text"
-              class="text-input subject-input"
-              placeholder="Subject"
-              name="subject"
-            />
-            <input
-              type="email"
-              class="text-input email-input"
-              placeholder="Email Address"
-              name="email"
-            />
-            <input
-              type="text"
-              class="text-input phone-input"
-              placeholder="Phone Number"
-              name="phone"
-            />
-            <textarea
-              class="text-input message-input"
-              placeholder="Enter Message"
-              name="message"
-            ></textarea>
-            <div class="my-2">
-              <div data-netlify-recaptcha="true"></div>
-            </div>
-          </div>
-          <button type="submit" class="btn-dark">Submit</button>
+          <input name="email" type="email" placeholder="francois_matta@outlook.com" />
+          <div data-netlify-recaptcha="true" class="captcha"></div>
+          <button type="submit">Send</button>
         </form>
+        <div class="viruses">
+          <img src="./images/section5-virus1.png" alt="covid-19 virus" />
+          <img src="./images/section5-virus2.png" alt="covid-19 virus" />
+        </div>
       </div>
     </section>
 

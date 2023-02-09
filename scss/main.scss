@@ -388,6 +388,7 @@ header {
       border-radius: 57px;
       padding: 0.5rem 1rem;
       margin-top: 2rem;
+      position: relative;
 
       & input {
         border: none;
@@ -416,11 +417,14 @@ header {
           border: 2px solid $primary-color;
         }
       }
-    }
-  }
 
-  & div:last-child {
-    margin-top: 30px;
+      & .captcha {
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   }
 
   & .viruses img:nth-child(1) {
